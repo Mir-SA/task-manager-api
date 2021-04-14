@@ -2,8 +2,8 @@ const sgMail = require("@sendgrid/mail");
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-const sendWelcomeMail = (email, name) => {
-    sgMail
+const sendWelcomeMail = async (email, name) => {
+    await sgMail
         .send({
             to: email,
             from: "kumarvij0202@gmail.com",
@@ -14,12 +14,12 @@ const sendWelcomeMail = (email, name) => {
             console.log("Email sent");
         })
         .catch((error) => {
-            console.error(error);
+            console.error();
         });
 };
 
-const sendCancellationMail = (email, name) => {
-    sgMail
+const sendCancellationMail = async (email, name) => {
+    await sgMail
         .send({
             to: email,
             from: "kumarvij0202@gmail.com",
@@ -30,7 +30,7 @@ const sendCancellationMail = (email, name) => {
             console.log("Email sent");
         })
         .catch((error) => {
-            console.error(error);
+            console.error();
         });
 };
 
