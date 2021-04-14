@@ -55,6 +55,6 @@ heroku config:set {key}={value}
 heroku config
 ```
 * Remove an environment variable
-```sh
+```
 heroku config:unset {key}
-```****
+```
