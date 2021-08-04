@@ -8,7 +8,7 @@ This application uses MongoDB to store data, both in development and production 
 To start a new database instance run the following command
 ```sh
 {path-to-mongod-file} --dbpath={path-to-data-storage}
-mongodb/bin/mongod --dbpath=/Users/andresalba/mongodb-data
+MongoDB/bin/mongod.exe --dbpath=/Users/Samir/MongoDB-data
 ```
 
 The connection URL would be: mongodb://127.0.0.1:27017
